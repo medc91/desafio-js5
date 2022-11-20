@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "List List "
+        "Total Tareas"
+    ;
+
+    background-color: beige;
+
+    border: 3px solid black;
+
+}
+
+.List {
+    grid-area: List;
+    padding: 20px;
+}
+
+.Tareas {
+    grid-area: Tareas;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.Tareas ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Total {
+    grid-area: Total;
+    padding-left: 2rem;
+}
